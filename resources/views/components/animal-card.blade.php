@@ -10,7 +10,8 @@
         <div class="infos">
             <strong>Espèce :</strong> {{ $animal->species }}<br>
             <strong>Age :</strong> {{ $animal->age }} ans<br>
-            <p style="margin-top: 10px;">{{ Str::limit($animal->description, 60) }}</p>
+            
+            <p>{{ Str::limit($animal->description, 60) }}</p>
         </div>
 
         <div class="actions">
