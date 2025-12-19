@@ -10,7 +10,7 @@ class AnimalController extends Controller
     public function show($id)
     {
         $animal = Animal::findOrFail($id);
-        return view('show', compact('animal'));
+        return view('pages.show', compact('animal'));
     }
 
     // Ajouter Coquillette
